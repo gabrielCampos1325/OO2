@@ -1,0 +1,45 @@
+# === Eclipse ===
+.metadata/
+*.log
+*.tmp
+*.bak
+*.swp
+*~.nib
+.localhistory/
+.project
+.classpath
+.settings/
+
+# === IntelliJ IDEA ===
+.idea/
+*.iml
+out/
+
+# === macOS ===
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Archivos creados por Spotlight
+.Spotlight-V100
+.Trashes
+._*
+
+# Archivos de sistema
+ehthumbs.db
+Thumbs.db
+Icon?
+Desktop.ini
+
+# === Java ===
+*.class
+
+# === Maven ===
+target/
+
+# === Gradle ===
+.gradle/
+build/
+
+# === VS Code (si lo usás también) ===
+.vscode/
