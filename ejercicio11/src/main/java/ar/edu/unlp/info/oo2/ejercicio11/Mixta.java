@@ -31,6 +31,7 @@ public class Mixta extends Topografia {
 	public boolean comparar(Topografia topografia) {
 		// TODO Auto-generated method stub
 		return false;
+		// doble dispatch
 	}
 	
 }

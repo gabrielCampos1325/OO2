@@ -51,7 +51,8 @@ public class ToDoItem {
 * in-progress o paused. Si se encuentra en otro estado, no hace nada.
 */
     public void finish(){
-
+        this.state.finish();
+        this.horaFin = LocalDate.now();
     }
 
 /**
@@ -61,7 +62,7 @@ public class ToDoItem {
 * genera un error informando la causa específica del mismo.
 */
     public Duration workedTime(){
-        return Duration.between(this.horaInicio, this.horaFin);
+        return Duration.between(this.horaInicio, this.horaFin); //PREGUNTAR
     }
 
 
@@ -70,7 +71,7 @@ public class ToDoItem {
 * contrario no hace nada."
 */
     public void addComment(String comment){
-        this.state.addComment(comment);
+        this.state.addComment(comment); //PREGUNTAR
     }
 
     public String getName(){

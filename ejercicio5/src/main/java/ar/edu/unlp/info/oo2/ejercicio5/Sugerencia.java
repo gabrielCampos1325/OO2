@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public abstract class Sugerencia {
 	public List<Pelicula> sugerir(List<Pelicula> todas, List<Pelicula> vistas) {
 		return todas.stream()
-				.filter(this.getFilter(vistas))
+				.filter(this.getFilter(vistas)) //PREGUNTAR
 				.sorted(this.getSort())
 				.limit(3)
 				.collect(Collectors.toList());

@@ -24,7 +24,7 @@ public class Directorio extends ElementoNavegable{
                 .sum();
     }
 
-    public LocalDate getFechaCreacion() { // preguntar
+    public LocalDate getFechaCreacion() { // PREGUNTAR
         return null;
     }
 
@@ -35,7 +35,7 @@ public class Directorio extends ElementoNavegable{
                 .max((a, b) -> Integer.compare(a.getTamanio(), b.getTamanio()))
                 .orElse(null);
     }
-
+// hacer metodo privado
     @Override
     public Archivo getArchivoMasNuevo() {
         return this.listaElementos.stream()
